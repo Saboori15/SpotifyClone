@@ -1,11 +1,15 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+  <Dashboard />
 </template>
 
+<script>
+import Dashboard from "./components/Dashboard.vue";
+export default {
+  components: {
+    Dashboard: Dashboard
+  }
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
